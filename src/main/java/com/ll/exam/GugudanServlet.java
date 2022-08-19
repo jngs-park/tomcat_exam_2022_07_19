@@ -16,9 +16,6 @@ public class GugudanServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Rq rq = new Rq(req, resp);
 
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/h tml; charset=utf-8");
 
         int dan = rq.getIntParam("dan", 0);
         int limit = rq.getIntParam("limit", 0);
